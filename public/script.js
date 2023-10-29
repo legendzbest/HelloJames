@@ -75,7 +75,7 @@ dragelement.addEventListener('mousedown',(e)=>
 });
 dragelement.addEventListener('mousemove',(e)=>
 {
-    if(dragelement.id=="helloAgainJames!")
+    if(dragelement.id=="HelloAgainJames!")
     {
     if(e.button==0)
     console.log("MOUSE IS MOVING");
@@ -97,7 +97,7 @@ dragelement.addEventListener('mousemove',(e)=>
 });
 dragelement.addEventListener('mouseup',(e)=>
 {
-    if(dragelement.id=="helloAgainJames!")
+    if(dragelement.id=="HelloAgainJames!")
     {
         if(e.button==0)
         {
