@@ -49,7 +49,7 @@ firstRectangle.addEventListener('mouseup',(e)=>
 addEventListener('mouseover',(e)=>
 {
     dragelement=(e.srcElement);
-    //console.log(dragelement.id);
+    console.log(dragelement);
     if (typeof ragelement=="undefined")
     {
         dragelement=bodys;
