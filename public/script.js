@@ -2,7 +2,7 @@ const firstRectangle=document.getElementById("HelloJames!");
 let offsetX,offsetY,Dragging=false;
 const bodys=document.getElementById("bodys");
 let allNewRecnagle;
-let dragelement;
+let dragelement=bodys
 const x=0;  
 firstRectangle.addEventListener('mousedown',(e)=>
 {
