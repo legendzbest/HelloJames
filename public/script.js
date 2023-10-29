@@ -1,5 +1,6 @@
 const firstRectangle=document.getElementById("HelloJames!");
 let offsetX,offsetY,Dragging=false;
+const body=document.getElementById("body");
 firstRectangle.addEventListener('mousedown',(e)=>
 {
     if(e.button==0)
@@ -31,6 +32,10 @@ firstRectangle.addEventListener('mousemove',(e)=>
 firstRectangle.addEventListener('mouseup',(e)=>
 {
     Dragging=false;
+    let newGreeting= document.createElement('div');
+    newGreeting.class="greeting";
+    newcontent.id="HelloAgainJames!";
+    body.appendchild(newGreeting)
     //console.log(e.clientX,e.clientY);
 }
 );
