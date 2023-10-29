@@ -23,10 +23,9 @@ firstRectangle.addEventListener('mousemove',(e)=>
         }
     else
         {
-            firstRectangle.style.position="absolute";
             firstRectangle.style.left=(e.clientX-offsetX)+'px';
             firstRectangle.style.top=(e.clientY-offsetY)+'px';
-            
+            firstRectangle.style.position="absolute";
         }
         //console.log(e);
     }
@@ -86,10 +85,10 @@ dragelement.addEventListener('mousemove',(e)=>
     else
         {
             //console.log("true");
-            dragelement.style.position="absolute"; 
             dragelement.style.left=(e.clientX-offsetX)+'px';
             dragelement.style.top=(e.clientY-offsetY)+'px';
-            
+            dragelement.style.position="absolute"; 
+
         }
         //console.log(e);
     }
