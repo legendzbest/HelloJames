@@ -24,7 +24,7 @@ firstRectangle.addEventListener('mousemove',(e)=>
 );
 firstRectangle.addEventListener('mouseup',(e)=>
 {
-    Dragging=false;
+    //Dragging=false;
     console.log(e.clientX,e.clientY);
 }
 );
