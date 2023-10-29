@@ -1,6 +1,7 @@
 const firstRectangle=document.getElementById("HelloJames!");
 let offsetX,offsetY,Dragging=false;
-firstRectangle.addEventListener('dragstart',(e)=>
+firstRectangle.addEventListener('mousedown',(e)=>
 {
     console.log(e);
-});
+}
+);
