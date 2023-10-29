@@ -81,12 +81,12 @@ dragelement.addEventListener('mousemove',(e)=>
     console.log("MOUSE IS MOVING");
     {   if(!dragging2)
         {
-            console.log("false");
+            //console.log("false");
             return;
         }
     else
         {
-            console.log("true");
+            //console.log("true");
             dragelement.style.left=(e.clientX-offsetX)+'px';
             dragelement.style.top=(e.clientY-offsetY)+'px';
             
