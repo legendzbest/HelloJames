@@ -2,7 +2,7 @@ const firstRectangle=document.getElementById("HelloJames!");
 let offsetX,offsetY,Dragging=false;
 const bodys=document.getElementById("bodys");
 let Draggingitem;
-let allNewRecnagle=documnet.querySelectoryAll('[id="HelloAgainJames!"]');
+let allNewRecnagle=document.querySelectoryAll('[id="HelloAgainJames!"]');
 firstRectangle.addEventListener('mousedown',(e)=>
 {
     if(e.button==0)
