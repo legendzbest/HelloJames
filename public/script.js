@@ -33,10 +33,10 @@ firstRectangle.addEventListener('mouseup',(e)=>
 {
     Dragging=false;
     let newGreeting= document.createElement('div');
-    //newGreeting.class="greeting";
-    //newcontent.id="HelloAgainJames!";
-    bodys.appendchild(newGreeting);
+    newGreeting.class="greeting";
+    newcontent.id="HelloAgainJames!";
+    bodys.appendChild(newGreeting);
     //console.log(e.clientX,e.clientY);
-    console.log("HERE");
+    //console.log("HERE");
 }
 );
