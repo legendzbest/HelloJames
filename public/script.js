@@ -1,5 +1,5 @@
 const firstRectangle=document.getElementById("HelloJames!");
-let offsetX,offsetY,Dragging=false;
+let offsetX,offsetY,Dragging,dragging2=false;
 const bodys=document.getElementById("bodys");
 let allNewRecnagle;
 let dragelement=bodys
@@ -68,7 +68,7 @@ dragelement.addEventListener('mousedown',(e)=>
         if(e.button==0)
     {
         //console.log("MASHALLA");
-        Dragging=true; 
+        dragging2=true; 
         dragelement.style.position="absolute"; 
         offsetX=e.clientX-dragelement.getBoundingClientRect().left;
         offsetY=e.clientY-dragelement.getBoundingClientRect().top;
@@ -80,7 +80,7 @@ dragelement.addEventListener('mousemove',(e)=>
     if(dragelement.id=="helloAgainJames!")
     {
     if(e.button==0)
-    {   if(!Dragging)
+    {   if(!dragging2)
         {
             return;
         }
@@ -100,7 +100,7 @@ dragelement.addEventListener('mouseup',(e)=>
     {
         if(e.button==0)
         {
-            Dragging=false;
+            dragging2=false;
             dragelement.id="novus";
             dragelement.style.display="none";
         }
