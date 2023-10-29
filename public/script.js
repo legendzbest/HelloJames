@@ -49,9 +49,50 @@ firstRectangle.addEventListener('mouseup',(e)=>
 addEventListener('mouseover',(e)=>
 {
     dragelement=(e.srcElement);
-    console.log(dragelement.id);
-    if (dragelement.id="HelloAgainJames!")
-    {
-        console.log("MASHALLAH!");
-    }
+    //console.log(dragelement.id);
 })
+dragelement.addEventListener('mouseup',(e)=>
+{
+    if (dragelement.id=="HelloAgainJames!")
+    {
+        if(e.button==0)
+    {
+        dragelement.style.position="absolute";
+        Dragging=true;  
+        offsetX=e.clientX-dragelement.getBoundingClientRect().left;
+        offsetY=e.clientY-dragelement.getBoundingClientRect().top;
+    }
+    }
+});
+dragelement.addEventListener('mousemove',(e)=>
+{
+    if(dragelement.id=="helloAgainJames!")
+    {
+    if(e.button==0)
+    {   if(!Dragging)
+        {
+            return;
+        }
+    else
+        {
+            dragelement.style.left=(e.clientX-offsetX)+'px';
+            dragelement.style.top=(e.clientY-offsetY)+'px';
+            
+        }
+        //console.log(e);
+    }
+}
+});
+dragelement.addEventListener('mouseup',(e)=>
+{
+    if(dragelement.id=="helloAgainJames!")
+    {
+        if(e.button==0)
+        {
+            Dragging=false;
+            dragelement.id="novus";
+            dragelement.style.display="none";
+        }
+    }
+}
+);
