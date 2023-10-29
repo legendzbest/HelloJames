@@ -4,7 +4,7 @@ firstRectangle.addEventListener('mousedown',(e)=>
 {
     if(e.button==0)
     {
-        console.log(e);
+        //console.log(e);
     }
 }
 );
