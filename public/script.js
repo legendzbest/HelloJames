@@ -78,7 +78,7 @@ dragelement.addEventListener('mousemove',(e)=>
     if(dragelement.id=="HelloAgainJames!")
     {
     if(e.button==0)
-    console.log("MOUSE IS MOVING");
+    //console.log("MOUSE IS MOVING");
     {   if(!dragging2)
         {
             //console.log("false");
