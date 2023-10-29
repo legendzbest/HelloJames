@@ -31,11 +31,12 @@ firstRectangle.addEventListener('mousemove',(e)=>
 );
 firstRectangle.addEventListener('mouseup',(e)=>
 {
-    Dragging=false;
     let newGreeting= document.createElement('div');
     //newGreeting.class="greeting";
     //newcontent.id="HelloAgainJames!";
     bodys.appendchild(newGreeting);
     //console.log(e.clientX,e.clientY);
+    Dragging=false;
+
 }
 );
