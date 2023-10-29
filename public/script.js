@@ -8,7 +8,6 @@ firstRectangle.addEventListener('mousedown',(e)=>
 {
     if(e.button==0)
     {
-        firstRectangle.style.position="absolute";
         Dragging=true;  
         offsetX=e.clientX-firstRectangle.getBoundingClientRect().left;
         offsetY=e.clientY-firstRectangle.getBoundingClientRect().top;
@@ -24,6 +23,7 @@ firstRectangle.addEventListener('mousemove',(e)=>
         }
     else
         {
+            firstRectangle.style.position="absolute";
             firstRectangle.style.left=(e.clientX-offsetX)+'px';
             firstRectangle.style.top=(e.clientY-offsetY)+'px';
             
