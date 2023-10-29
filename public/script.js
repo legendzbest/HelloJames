@@ -60,7 +60,7 @@ addEventListener('mouseover',(e)=>
 })
 dragelement.addEventListener('mousedown',(e)=>
 {
-    console.log(dragelement.id);
+    //console.log(dragelement.id);
     if (dragelement.id=="HelloAgainJames!")
     {
         if(e.button==0)
