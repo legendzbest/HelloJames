@@ -2,11 +2,12 @@ const firstRectangle=document.getElementById("HelloJames!");
 const counter=document.getElementById("Counter");
 let number=0;
 button.addEventListener('dragstart',  drag);
-const drag = (event)=>{
+buttone.addEventListener('drop', drop);
+const drag = (e)=>{
     
-    console.log(event)
-}
-const drop= (event)=>
+    console.log(e);
+};
+const drop= (e)=>
 {
-    console.log(event)
-}
+    console.log(e);
+};
