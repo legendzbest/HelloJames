@@ -53,9 +53,9 @@ addEventListener('mouseover',(e)=>
     if (typeof ragelement=="undefined")
     {
         dragelement=bodys;
-        console.log(bodys.id);
+        //console.log(bodys.id);
     }
-    //console.log(dragelement.id);
+    console.log(dragelement.id);
 })
 dragelement.addEventListener('mouseup',(e)=>
 {
