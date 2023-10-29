@@ -14,8 +14,9 @@ firstRectangle.addEventListener('mousemove',(e)=>
     if(e.button==0)
     {   if(Dragging)
         {
-            firstRectangle.style.left=e.clientX+'px';
-            firstRectangle.style.top=e.clientY+'px';
+            console.log(firstRectangle.style.left=e.clientX+'px');
+            console.log(firstRectangle.style.top=e.clientY+'px');
+            
         }
         //console.log(e);
     }
