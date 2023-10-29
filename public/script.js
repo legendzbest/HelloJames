@@ -20,12 +20,10 @@ firstRectangle.addEventListener('mousemove',(e)=>
     if(e.button==0)
     {   if(!Dragging)
         {
-            console.log("false");
             return;
         }
     else
         {
-            console.log("true");
             firstRectangle.style.left=(e.clientX-offsetX)+'px';
             firstRectangle.style.top=(e.clientY-offsetY)+'px';
             
@@ -82,10 +80,12 @@ dragelement.addEventListener('mousemove',(e)=>
     if(e.button==0)
     {   if(!dragging2)
         {
+            console.log("false");
             return;
         }
     else
         {
+            console.log("true");
             dragelement.style.left=(e.clientX-offsetX)+'px';
             dragelement.style.top=(e.clientY-offsetY)+'px';
             
