@@ -66,8 +66,8 @@ dragelement.addEventListener('mousedown',(e)=>
         if(e.button==0)
     {
         //console.log("MASHALLA");
-        dragelement.style.position="absolute";
-        Dragging=true;  
+        Dragging=true; 
+        dragelement.style.position="absolute"; 
         offsetX=e.clientX-dragelement.getBoundingClientRect().left;
         offsetY=e.clientY-dragelement.getBoundingClientRect().top;
     }
