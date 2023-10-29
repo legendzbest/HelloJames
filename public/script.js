@@ -4,7 +4,7 @@ firstRectangle.addEventListener('mousedown',(e)=>
 {
     if(e.button==0)
     {
-        console.log("FIRST CLICK");
+        console.log(e.clientX,e.clientY);
         Dragging=true;
     }
 }
@@ -24,6 +24,6 @@ firstRectangle.addEventListener('mousemove',(e)=>
 firstRectangle.addEventListener('mouseup',(e)=>
 {
     Dragging=false;
-    console.log("LAST CLICK");
+    console.log(e.clientX,e.clientY);
 }
 );
