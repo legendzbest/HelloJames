@@ -1,9 +1,55 @@
-html{
-  background-color:blue;
-}
+/* Importing the Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Global Styles */
 body {
-  color:red;
-  background-color:aqua;
-  font-family: Arial, sans-serif;
-  font-size: 18;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #84fab0 0%, #8fd3f4 100%);
+  margin: 0;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.greeting {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  color: #333;
+  background: #ffffffdd; /* Slight transparency */
+  padding: 20px 40px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  max-width: 90%;
+  text-align: center;
+}
+
+.instruction-header {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffffaa; /* semi-transparent white */
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile First Styles */
+@media (max-width: 600px) {
+  .greeting {
+      font-size: 1.5rem;
+      padding: 15px 30px;
+  }
+}
+
+/* Tablet and Larger Devices */
+@media (min-width: 601px) {
+  .greeting {
+      font-size: 2.5rem;
+  }
 }
