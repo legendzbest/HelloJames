@@ -4,7 +4,8 @@ firstRectangle.addEventListener('mousedown',(e)=>
 {
     if(e.button==0)
     {
-        Dragging=true
+        console.log("FIRST CLICK");
+        Dragging=true;
     }
 }
 );
@@ -16,12 +17,13 @@ firstRectangle.addEventListener('mousemove',(e)=>
             firstRectangle.style.left=e.clientX;
             firstRectangle.style.top=e.clientY;
         }
-        //console.log(e);
+        console.log(e);
     }
 }
 );
 firstRectangle.addEventListener('mouseup',(e)=>
 {
     Dragging=false;
+    console.log("LAST CLICK");
 }
 );
