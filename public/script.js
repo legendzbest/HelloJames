@@ -17,7 +17,7 @@ firstRectangle.addEventListener('mousemove',(e)=>
             firstRectangle.style.left=e.clientX;
             firstRectangle.style.top=e.clientY;
         }
-        console.log(e);
+        //console.log(e);
     }
 }
 );
