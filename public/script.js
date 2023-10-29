@@ -49,12 +49,13 @@ firstRectangle.addEventListener('mouseup',(e)=>
 addEventListener('mouseover',(e)=>
 {
     dragelement=(e.srcElement);
-    console.log(dragelement.id);
-    if (typeof dragelement=="undefined")
-    {
-        dragelement=bodys;
+    if(dragelement.id!="HelloAgainJames")
+        return;
+    //if (typeof dragelement=="undefined")
+    //{
+    //    dragelement=bodys;
         //console.log(bodys.id);
-    }
+    //}
     //console.log(dragelement.id);
 })
 dragelement.addEventListener('mousedown',(e)=>
@@ -64,7 +65,7 @@ dragelement.addEventListener('mousedown',(e)=>
     {
         if(e.button==0)
     {
-        console.log("MASHALLA");
+        //console.log("MASHALLA");
         dragelement.style.position="absolute";
         Dragging=true;  
         offsetX=e.clientX-dragelement.getBoundingClientRect().left;
