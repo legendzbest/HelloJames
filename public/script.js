@@ -47,5 +47,5 @@ firstRectangle.addEventListener('mouseup',(e)=>
 );
 addEventListener('mouseover',(e)=>
 {
-    console.log(e);
+    console.log(e.element);
 })
