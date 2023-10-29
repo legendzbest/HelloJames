@@ -3,6 +3,7 @@ let offsetX,offsetY,Dragging=false;
 const bodys=document.getElementById("bodys");
 let Draggingitem;
 let allNewRecnagle;
+const x=0;
 firstRectangle.addEventListener('mousedown',(e)=>
 {
     if(e.button==0)
@@ -46,6 +47,8 @@ firstRectangle.addEventListener('mouseup',(e)=>
 }
 );
 for (Rectangle in allNewRecnagle)
+while(x=0)
+{
 {
     Rectangle.addEventListener('mousedown',(e)=>{
     if(e.button==0)
@@ -86,4 +89,5 @@ for (Rectangle in allNewRecnagle)
     //console.log("HERE");
 }
 )
+}
 };
