@@ -4,23 +4,24 @@ firstRectangle.addEventListener('mousedown',(e)=>
 {
     if(e.button==0)
     {
-        //console.log(e);
+        Dragging=true
     }
 }
 );
 firstRectangle.addEventListener('mousemove',(e)=>
 {
     if(e.button==0)
-    {
+    {   if(Dragging)
+        {
+            firstRectangle.style.left=e.clientX;
+            firstRectangle.style.top=e.clientY;
+        }
         //console.log(e);
     }
 }
 );
 firstRectangle.addEventListener('mouseup',(e)=>
 {
-    if(e.button==0)
-    {
-        console.log(e);
-    }
+    Dragging=false;
 }
 );
