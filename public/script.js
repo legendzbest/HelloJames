@@ -1,7 +1,12 @@
-const button=document.getElementById("Button");
+const firstRectangle=document.getElementById("HelloJames!");
 const counter=document.getElementById("Counter");
 let number=0;
-button.addEventListener("click", ()=>{
-    number+=1;
-    counter.textContent=number;
- });
+button.addEventListener('dragstart',  drag);
+const drag = (event)=>{
+    
+    console.log(event)
+}
+const drop= (event)=>
+{
+    console.log(event)
+}
