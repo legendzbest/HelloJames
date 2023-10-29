@@ -1,8 +1,8 @@
 const firstRectangle=document.getElementById("HelloJames!");
 const counter=document.getElementById("Counter");
 let number=0;
-firstRectangle.addEventListener('dragstart',  drag(e));
-firstRectangle.addEventListener('drop', drop(e));
+firstRectangle.addEventListener('dragstart',  drag);
+//firstRectangle.addEventListener('drop', drop);
 const drag = (e)=>{
     
     console.log(e);
