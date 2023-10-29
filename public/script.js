@@ -50,7 +50,7 @@ addEventListener('mouseover',(e)=>
 {
     dragelement=(e.srcElement);
     console.log(dragelement.id);
-    if (typeof ragelement=="undefined")
+    if (typeof dragelement=="undefined")
     {
         dragelement=bodys;
         //console.log(bodys.id);
