@@ -5,4 +5,3 @@ button.addEventListener("click", ()=>{
     number+=1;
     counter.textContent=number;
  });
- //
