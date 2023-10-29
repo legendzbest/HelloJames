@@ -57,7 +57,7 @@ addEventListener('mouseover',(e)=>
     //}
     //console.log(dragelement.id);
 })
-dragelement.addEventListener('mouseup',(e)=>
+dragelement.addEventListener('mousedown',(e)=>
 {
     console.log("ANYTHING");
     if (dragelement.id=="HelloAgainJames!")
