@@ -45,3 +45,45 @@ firstRectangle.addEventListener('mouseup',(e)=>
     //console.log("HERE");
 }
 );
+for (Rectangle in allNewRecnagle)
+{
+    Rectangle.addEventListener('mousedown',(e)=>{
+    if(e.button==0)
+    {
+        Rectangle.style.position="absolute";
+        Dragging=true;  
+        offsetX=e.clientX-Rectangle.getBoundingClientRect().left;
+        offsetY=e.clientY-Rectangle.getBoundingClientRect().top;
+    }
+    }
+        )
+    Rectangle.addEventListener('mousemove',(e)=>
+{
+    if(e.button==0)
+    {   if(!Dragging)
+        {
+            return;
+        }
+    else
+        {
+            Rectangle.style.left=(e.clientX-offsetX)+'px';
+            Rectangle.style.top=(e.clientY-offsetY)+'px';
+            
+        }
+        //console.log(e);
+    }
+}
+
+    )
+    Rectangle.addEventListener('mouseup',(e)=>
+{
+    Dragging=false;
+    Rectangle.id="new";
+    Rectangle.style.display="none";
+    allNewRecnagle=document.querySelectorAll('[id="HelloAgainJames!"]');
+    console.log(allNewRecnagle);
+    //console.log(e.clientX,e.clientY);
+    //console.log("HERE");
+}
+)
+};
