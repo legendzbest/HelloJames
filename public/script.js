@@ -1,6 +1,8 @@
 const firstRectangle=document.getElementById("HelloJames!");
 let offsetX,offsetY,Dragging=false;
 const bodys=document.getElementById("bodys");
+let Draggingitem;
+let allNewRecnagle=documnet.querySelectoryAll('[id="HelloAgainJames!"]');
 firstRectangle.addEventListener('mousedown',(e)=>
 {
     if(e.button==0)
@@ -37,6 +39,7 @@ firstRectangle.addEventListener('mouseup',(e)=>
     newGreeting.id="HelloAgainJames!";
     newGreeting.textContent="Hello again, James!";
     bodys.appendChild(newGreeting);
+    console.log(allNewRecnagle);
     //console.log(e.clientX,e.clientY);
     //console.log("HERE");
 }
