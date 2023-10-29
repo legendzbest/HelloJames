@@ -49,7 +49,7 @@ firstRectangle.addEventListener('mouseup',(e)=>
 addEventListener('mouseover',(e)=>
 {
     dragelement=(e.srcElement);
-    console.log(dragelement.id);
+    //console.log(dragelement.id);
     if (typeof ragelement=="undefined")
     {
         dragelement=bodys;
@@ -63,6 +63,7 @@ dragelement.addEventListener('mouseup',(e)=>
     {
         if(e.button==0)
     {
+        console.log("MASHALLA");
         dragelement.style.position="absolute";
         Dragging=true;  
         offsetX=e.clientX-dragelement.getBoundingClientRect().left;
