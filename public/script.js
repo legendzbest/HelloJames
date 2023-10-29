@@ -50,15 +50,16 @@ addEventListener('mouseover',(e)=>
 {
     dragelement=(e.srcElement);
     console.log(dragelement);
-    if (typeof ragelement=="undefined")
-    {
-        dragelement=bodys;
+    //if (typeof ragelement=="undefined")
+    //{
+    //    dragelement=bodys;
         //console.log(bodys.id);
-    }
-    console.log(dragelement.id);
+    //}
+    //console.log(dragelement.id);
 })
 dragelement.addEventListener('mouseup',(e)=>
 {
+    console.log("ANYTHING");
     if (dragelement.id=="HelloAgainJames!")
     {
         if(e.button==0)
